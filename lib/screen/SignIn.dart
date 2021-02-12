@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import '../Home.dart';
+
 class SignIn extends StatelessWidget {
 
   String email = '';
@@ -104,6 +106,11 @@ class SignIn extends StatelessWidget {
                         Scaffold.of(context).showSnackBar(SnackBar(
                           content: Text("test" + email + password),
                         ));
+                        Navigator.pop(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SecondRoute()),
+                        );
                       }
                     },//since this is only a UI app
                     child: Text('SIGN IN',

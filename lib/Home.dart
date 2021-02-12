@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:soorisulsul/screen/SignInOne.dart';
+import 'package:soorisulsul/screen/SignIn.dart';
 
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SignInOne(),
-//    body: SignInTwo(),
+      body: SignIn(),
     );
   }
 }

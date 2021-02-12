@@ -42,7 +42,7 @@ class SignIn extends StatelessWidget {
         color: Colors.white,
       ),
       child: Padding(
-          padding: EdgeInsets.all(30),
+          padding: EdgeInsets.fromLTRB(35, 0, 35, 35),
           child: Form(
             key: formKey,
             child: ListView(
@@ -62,7 +62,6 @@ class SignIn extends StatelessWidget {
 
   Widget signInTextField() {
     return Container(
-      transform: Matrix4.translationValues(0.0, -50.0, 0.0),
       child: RichText(
         text: TextSpan(
             text: "Sign In",
@@ -79,7 +78,7 @@ class SignIn extends StatelessWidget {
   
   Widget emailTextField() {
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+      padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
       child: Container(
         color: Color(0xfff5f5f5),
         child: TextFormField(

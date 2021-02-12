@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="[FIX] (main,route) refactoring">
+    <list default="true" id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="[FIX] (signin) refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/signIn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/signIn.dart" afterDir="false" />
     </list>
@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613119812611</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[FIX] (signin) refactoring">
+      <created>1613121335105</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613121335105</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +150,8 @@
     <MESSAGE value="[FIX] SignIn test complete" />
     <MESSAGE value="[ADD] SignIn 후에 main page 구성 완료" />
     <MESSAGE value="[FIX] (main,route) refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX] (main,route) refactoring" />
+    <MESSAGE value="[FIX] (signin) refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX] (signin) refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state width="2217" height="378" key="GridCell.Tab.0.bottom" timestamp="1613120461155">
@@ -166,10 +174,10 @@
       <screen x="0" y="25" width="3440" height="1330" />
     </state>
     <state x="2081" y="325" key="SettingsEditor/0.25.3440.1330@0.25.3440.1330" timestamp="1613117748906" />
-    <state x="2316" y="426" key="Vcs.Push.Dialog.v2" timestamp="1613119816275">
+    <state x="2316" y="426" key="Vcs.Push.Dialog.v2" timestamp="1613121340582">
       <screen x="0" y="25" width="3440" height="1330" />
     </state>
-    <state x="2316" y="426" key="Vcs.Push.Dialog.v2/0.25.3440.1330@0.25.3440.1330" timestamp="1613119816275" />
+    <state x="2316" y="426" key="Vcs.Push.Dialog.v2/0.25.3440.1330@0.25.3440.1330" timestamp="1613121340582" />
     <state x="2499" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613053940196">
       <screen x="0" y="25" width="3440" height="1330" />
     </state>

@@ -51,6 +51,7 @@ class SignIn extends StatelessWidget {
                 emailTextField(),
                 passwordTextField(),
                 signInButton(context),
+                kakaoSignInButton(context),
                 forgotpasswordTextField(),
                 signupTextField()
               ],
@@ -165,9 +166,40 @@ class SignIn extends StatelessWidget {
     );
   }
 
+  Widget kakaoSignInButton(BuildContext context){
+    return Padding(
+      padding: EdgeInsets.only(top: 20),
+      child: InkWell (
+        child: Container(
+          width: MediaQuery.of(context).size.width * 1,
+          height: MediaQuery.of(context).size.height * 0.05,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.yellow
+          ),
+          child :Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.chat_bubble, color: Colors.black54),
+              SizedBox(width: 10,),
+              Text(
+                '카카오계정 로그인',
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontWeight: FontWeight.w900,
+                    fontSize: 20
+                ),
+              ),
+            ],
+          )
+        ),
+      )
+    );
+  }
+
   Widget forgotpasswordTextField() {
     return Padding(
-      padding: EdgeInsets.only(top: 70),
+      padding: EdgeInsets.only(top: 50),
       child: Center(
         child: Text('Forgot your password?',
           style: TextStyle(
@@ -182,7 +214,7 @@ class SignIn extends StatelessWidget {
 
   Widget signupTextField() {
     return Padding(
-      padding: EdgeInsets.only(top: 70),
+      padding: EdgeInsets.only(top: 50),
       child: Center(
         child: RichText(
           text: TextSpan(

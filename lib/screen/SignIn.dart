@@ -3,6 +3,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatelessWidget {
+
+  String email = '';
+  String password = '';
+  final formKey = new GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -25,6 +30,8 @@ class SignIn extends StatelessWidget {
           ),
           child: Padding(
             padding: EdgeInsets.all(30),
+            child: Form(
+              key: formKey,
             child: ListView(
               children: <Widget>[
                 Container(
@@ -46,6 +53,7 @@ class SignIn extends StatelessWidget {
                   child: Container(
                     color: Color(0xfff5f5f5),
                     child: TextFormField(
+                      onSaved: (val) => email = val,
                       style: TextStyle(
                           color: Colors.black,
                           fontFamily: 'Tomorrow'
@@ -61,12 +69,14 @@ class SignIn extends StatelessWidget {
                               fontSize: 15
                           )
                       ),
+
                     ),
                   ),
                 ),
                 Container(
                   color: Color(0xfff5f5f5),
                   child: TextFormField(
+                    onSaved: (val) => password = val,
                     obscureText: true,
                     style: TextStyle(
                         color: Colors.black,
@@ -88,7 +98,14 @@ class SignIn extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: 40),
                   child: MaterialButton(
-                    onPressed: (){},//since this is only a UI app
+                    onPressed: (){
+                      if (formKey.currentState.validate()) {
+                        formKey.currentState.save();
+                        Scaffold.of(context).showSnackBar(SnackBar(
+                          content: Text("test" + email + password),
+                        ));
+                      }
+                    },//since this is only a UI app
                     child: Text('SIGN IN',
                       style: TextStyle(
                         fontSize: 15,
@@ -149,6 +166,7 @@ class SignIn extends StatelessWidget {
                 )
               ],
             ),
+            )
           ),
         )
       ],

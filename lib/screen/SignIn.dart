@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-import '../Home.dart';
+import '../route.dart';
 
 class SignIn extends StatelessWidget {
 
@@ -109,7 +109,7 @@ class SignIn extends StatelessWidget {
                         Navigator.pop(context);
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SecondRoute()),
+                          MaterialPageRoute(builder: (context) => MainRoute()),
                         );
                       }
                     },//since this is only a UI app

@@ -3,7 +3,7 @@ import 'package:soorisulsul/screen/Main.dart';
 import 'package:soorisulsul/screen/SignIn.dart';
 
 
-class Home extends StatelessWidget {
+class SignInRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
   }
 }
 
-class SecondRoute extends StatelessWidget{
+class MainRoute extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

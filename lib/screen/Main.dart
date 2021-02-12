@@ -4,7 +4,7 @@ import 'package:soorisulsul/screen/home.dart';
 import 'package:soorisulsul/screen/second.dart';
 
 
-class MyApp extends StatelessWidget {
+class Main extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

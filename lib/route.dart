@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soorisulsul/screen/Main.dart';
-import 'package:soorisulsul/screen/SignIn.dart';
+import 'package:soorisulsul/screen/signIn.dart';
 
 
 class SignInRoute extends StatelessWidget {
@@ -16,7 +16,7 @@ class MainRoute extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: MyApp(),
+      body: Main(),
     );
   }
 }

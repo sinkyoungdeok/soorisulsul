@@ -1,12 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="[ADD] default project">
+      <change afterPath="$PROJECT_DIR$/lib/Home.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screen/SignInOne.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oL76MJbsCEhsGRGfSHfDN9RXsL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="" />
+      <created>1613053840869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613053840869</updated>
+    </task>
+    <task id="LOCAL-00001" summary="[ADD] default project">
+      <created>1613054019114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613054019114</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[ADD] default project" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] default project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1105" height="378" key="GridCell.Tab.0.bottom" timestamp="1613056759103">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state width="1105" height="378" key="GridCell.Tab.0.bottom/0.25.3440.1330@0.25.3440.1330" timestamp="1613056759103" />
+    <state width="1105" height="378" key="GridCell.Tab.0.center" timestamp="1613056759103">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state width="1105" height="378" key="GridCell.Tab.0.center/0.25.3440.1330@0.25.3440.1330" timestamp="1613056759103" />
+    <state width="1105" height="378" key="GridCell.Tab.0.left" timestamp="1613056759102">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state width="1105" height="378" key="GridCell.Tab.0.left/0.25.3440.1330@0.25.3440.1330" timestamp="1613056759102" />
+    <state width="1105" height="378" key="GridCell.Tab.0.right" timestamp="1613056759103">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state width="1105" height="378" key="GridCell.Tab.0.right/0.25.3440.1330@0.25.3440.1330" timestamp="1613056759103" />
+    <state x="2316" y="426" key="Vcs.Push.Dialog.v2" timestamp="1613054030905">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state x="2316" y="426" key="Vcs.Push.Dialog.v2/0.25.3440.1330@0.25.3440.1330" timestamp="1613054030905" />
+    <state x="2499" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613053940196">
+      <screen x="0" y="25" width="3440" height="1330" />
+    </state>
+    <state x="2499" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.3440.1330@0.25.3440.1330" timestamp="1613053940196" />
   </component>
 </project>

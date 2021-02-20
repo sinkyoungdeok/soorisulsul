@@ -51,6 +51,7 @@ class _KakaoLoginState extends State<SignIn> {
       var token = await AuthApi.instance.issueAccessToken(authCode);
       AccessTokenStore.instance.toStore(token);
       print(token);
+      Navigator.pop(context);
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => MainRoute()),

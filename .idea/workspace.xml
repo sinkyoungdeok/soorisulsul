@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="[FIX] (signin) kakao ui">
+    <list default="true" id="2a9386fd-4748-4095-b3d8-5544eab58965" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screen/signIn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/signIn.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613121913628</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[ADD] (signin) kakao 로그인 기능 완성">
+      <created>1613811118791</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613811118791</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +170,8 @@
     <MESSAGE value="[FIX] (signin) refactoring" />
     <MESSAGE value="[FIX] (signin) ui" />
     <MESSAGE value="[FIX] (signin) kakao ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX] (signin) kakao ui" />
+    <MESSAGE value="[ADD] (signin) kakao 로그인 기능 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (signin) kakao 로그인 기능 완성" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2354" y="268" key="#Project_Structure" timestamp="1613143017357">
@@ -181,34 +186,39 @@
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
     <state x="997" y="123" width="695" height="817" key="AVDManager/0.23.1792.1018@0.23.1792.1018" timestamp="1613807027247" />
-    <state width="556" height="240" key="GridCell.Tab.0.bottom" timestamp="1613810622460">
+    <state x="893" y="108" key="CommitChangelistDialog2" timestamp="1613811118550">
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
-    <state width="556" height="240" key="GridCell.Tab.0.bottom/0.23.1792.1018@0.23.1792.1018" timestamp="1613810622460" />
+    <state x="893" y="108" key="CommitChangelistDialog2/0.23.1792.1018@0.23.1792.1018" timestamp="1613811118550" />
+    <state width="871" height="240" key="GridCell.Tab.0.bottom" timestamp="1613811077749">
+      <screen x="0" y="23" width="1792" height="1018" />
+    </state>
+    <state width="871" height="240" key="GridCell.Tab.0.bottom/0.23.1792.1018@0.23.1792.1018" timestamp="1613811077749" />
     <state width="1105" height="378" key="GridCell.Tab.0.bottom/0.25.3440.1330@0.25.3440.1330" timestamp="1613143348520" />
-    <state width="556" height="240" key="GridCell.Tab.0.center" timestamp="1613810622459">
+    <state width="871" height="240" key="GridCell.Tab.0.center" timestamp="1613811077748">
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
-    <state width="556" height="240" key="GridCell.Tab.0.center/0.23.1792.1018@0.23.1792.1018" timestamp="1613810622459" />
+    <state width="871" height="240" key="GridCell.Tab.0.center/0.23.1792.1018@0.23.1792.1018" timestamp="1613811077748" />
     <state width="1105" height="378" key="GridCell.Tab.0.center/0.25.3440.1330@0.25.3440.1330" timestamp="1613143348520" />
-    <state width="556" height="240" key="GridCell.Tab.0.left" timestamp="1613810622459">
+    <state width="871" height="240" key="GridCell.Tab.0.left" timestamp="1613811077748">
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
-    <state width="556" height="240" key="GridCell.Tab.0.left/0.23.1792.1018@0.23.1792.1018" timestamp="1613810622459" />
+    <state width="871" height="240" key="GridCell.Tab.0.left/0.23.1792.1018@0.23.1792.1018" timestamp="1613811077748" />
     <state width="1105" height="378" key="GridCell.Tab.0.left/0.25.3440.1330@0.25.3440.1330" timestamp="1613143348519" />
-    <state width="556" height="240" key="GridCell.Tab.0.right" timestamp="1613810622459">
+    <state width="871" height="240" key="GridCell.Tab.0.right" timestamp="1613811077749">
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
-    <state width="556" height="240" key="GridCell.Tab.0.right/0.23.1792.1018@0.23.1792.1018" timestamp="1613810622459" />
+    <state width="871" height="240" key="GridCell.Tab.0.right/0.23.1792.1018@0.23.1792.1018" timestamp="1613811077749" />
     <state width="1105" height="378" key="GridCell.Tab.0.right/0.25.3440.1330@0.25.3440.1330" timestamp="1613143348520" />
     <state x="795" y="117" key="SettingsEditor" timestamp="1613806974704">
       <screen x="0" y="23" width="1792" height="1018" />
     </state>
     <state x="795" y="117" key="SettingsEditor/0.23.1792.1018@0.23.1792.1018" timestamp="1613806974704" />
     <state x="2081" y="325" key="SettingsEditor/0.25.3440.1330@0.25.3440.1330" timestamp="1613143201092" />
-    <state x="2316" y="426" key="Vcs.Push.Dialog.v2" timestamp="1613121917607">
-      <screen x="0" y="25" width="3440" height="1330" />
+    <state x="992" y="330" key="Vcs.Push.Dialog.v2" timestamp="1613811125799">
+      <screen x="0" y="23" width="1792" height="1018" />
     </state>
+    <state x="992" y="330" key="Vcs.Push.Dialog.v2/0.23.1792.1018@0.23.1792.1018" timestamp="1613811125799" />
     <state x="2316" y="426" key="Vcs.Push.Dialog.v2/0.25.3440.1330@0.25.3440.1330" timestamp="1613121917607" />
     <state x="2499" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613053940196">
       <screen x="0" y="25" width="3440" height="1330" />

@@ -7,3 +7,6 @@
 - [이태경](https://github.com/tph00300) (개발)
 - [장민석](https://github.com/skysrd) (기획, 디자인)
 - 전승현 (디자인)
+
+## 진행사항
+- 2월21일 로그인 창 완성

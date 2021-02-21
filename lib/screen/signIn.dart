@@ -132,18 +132,21 @@ class _KakaoLoginState extends State<SignIn> {
 
     return  LayoutBuilder(builder: (context, boxConstraints)
     {
+      print(isSmall);
       print(boxConstraints.maxHeight);
       if(boxConstraints.maxHeight <= 670){
+        print(1);
         isSmall = true;
       }
-
       print(isSmall);
+
       return Container(
         width: MediaQuery
             .of(context)
             .size
             .width,
-        margin: EdgeInsets.only(top: isSmall ? 150 : 300),
+        // margin: EdgeInsets.only(top: isSmall ? 180 : 300),
+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.35),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,
@@ -188,11 +191,12 @@ class _KakaoLoginState extends State<SignIn> {
   }
   
   Widget emailTextField() {
+    var myDeviceHeight = MediaQuery.of(context).size.height;
     return Padding(
-      padding: isSmall ? EdgeInsets.fromLTRB(0, 15, 0, 15):EdgeInsets.fromLTRB(0, 20, 0, 20),
+      padding: EdgeInsets.fromLTRB(0, myDeviceHeight * 0.015, 0, myDeviceHeight * 0.015),
       child: Container(
         color: Color(0xfff5f5f5),
-        height: isSmall ? 45 : 55,
+        height: myDeviceHeight * 0.07,
         child: TextFormField(
           onSaved: (val) => email = val,
           style: TextStyle(
@@ -217,9 +221,10 @@ class _KakaoLoginState extends State<SignIn> {
   }
   
   Widget passwordTextField() {
+    var myDeviceHeight = MediaQuery.of(context).size.height;
     return Container(
       color: Color(0xfff5f5f5),
-      height: isSmall ? 45 : 55,
+      height: myDeviceHeight * 0.07 ,
       child: TextFormField(
         onSaved: (val) => password = val,
         obscureText: true,
@@ -243,8 +248,9 @@ class _KakaoLoginState extends State<SignIn> {
   }
   
   Widget signInButton(BuildContext context) {
+    var myDeviceHeight = MediaQuery.of(context).size.height;
     return Padding(
-      padding: EdgeInsets.only(top: isSmall ? 20 : 40),
+      padding: EdgeInsets.only(top: myDeviceHeight * 0.02),
       child: MaterialButton(
         onPressed: (){
           if (formKey.currentState.validate()) {
@@ -269,7 +275,7 @@ class _KakaoLoginState extends State<SignIn> {
         color: Color(0xffff2d55),
         elevation: 0,
         minWidth: 400,
-        height: 50,
+        height: myDeviceHeight * 0.06,
         textColor: Colors.white,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10)

@@ -25,7 +25,7 @@ class SignIn extends StatefulWidget {
 
 class _KakaoLoginState extends State<SignIn> {
   bool _isKakaoTalkInstalled = false;
-
+  var isSmall = false;
   @override
   void dispose() {
     super.dispose();
@@ -129,32 +129,47 @@ class _KakaoLoginState extends State<SignIn> {
   }
 
   Widget mainContainer(BuildContext context) {
-    return  Container(
-      width: MediaQuery.of(context).size.width,
-      margin: EdgeInsets.only(top: 300),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.white,
-      ),
-      child: Padding(
-          padding: EdgeInsets.fromLTRB(35, 0, 35, 35),
-          child: Form(
-            key: formKey,
-            child: ListView(
-              children: <Widget>[
-                signInTextField(),
-                emailTextField(),
-                passwordTextField(),
-                signInButton(context),
-                kakaoSignInButton(context),
-                forgotpasswordTextField(),
-                signupTextField()
-              ],
-            ),
-          )
-      ),
+
+    return  LayoutBuilder(builder: (context, boxConstraints)
+    {
+      print(boxConstraints.maxHeight);
+      if(boxConstraints.maxHeight <= 670){
+        isSmall = true;
+      }
+
+      print(isSmall);
+      return Container(
+        width: MediaQuery
+            .of(context)
+            .size
+            .width,
+        margin: EdgeInsets.only(top: isSmall ? 150 : 300),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white,
+        ),
+        child: Padding(
+            padding: EdgeInsets.fromLTRB(35, 0, 35, 35),
+            child: Form(
+              key: formKey,
+              child: ListView(
+                children: <Widget>[
+                  signInTextField(),
+                  emailTextField(),
+                  passwordTextField(),
+                  signInButton(context),
+                  kakaoSignInButton(context),
+                  forgotpasswordTextField(),
+                  signupTextField()
+                ],
+              ),
+            )
+        ),
+      );
+    }
     );
   }
+
 
   Widget signInTextField() {
     return Container(
@@ -165,7 +180,7 @@ class _KakaoLoginState extends State<SignIn> {
               fontWeight: FontWeight.bold,
               fontFamily: 'Tomorrow',
               color: Colors.black,
-              fontSize: 40,
+              fontSize: isSmall ? 25 : 40,
             )
         ),
       ),
@@ -174,9 +189,10 @@ class _KakaoLoginState extends State<SignIn> {
   
   Widget emailTextField() {
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+      padding: isSmall ? EdgeInsets.fromLTRB(0, 15, 0, 15):EdgeInsets.fromLTRB(0, 20, 0, 20),
       child: Container(
         color: Color(0xfff5f5f5),
+        height: isSmall ? 45 : 55,
         child: TextFormField(
           onSaved: (val) => email = val,
           style: TextStyle(
@@ -203,6 +219,7 @@ class _KakaoLoginState extends State<SignIn> {
   Widget passwordTextField() {
     return Container(
       color: Color(0xfff5f5f5),
+      height: isSmall ? 45 : 55,
       child: TextFormField(
         onSaved: (val) => password = val,
         obscureText: true,
@@ -227,7 +244,7 @@ class _KakaoLoginState extends State<SignIn> {
   
   Widget signInButton(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 40),
+      padding: EdgeInsets.only(top: isSmall ? 20 : 40),
       child: MaterialButton(
         onPressed: (){
           if (formKey.currentState.validate()) {
@@ -295,7 +312,7 @@ class _KakaoLoginState extends State<SignIn> {
 
   Widget forgotpasswordTextField() {
     return Padding(
-      padding: EdgeInsets.only(top: 50),
+      padding: EdgeInsets.only(top: isSmall ? 20 : 50),
       child: Center(
         child: Text('Forgot your password?',
           style: TextStyle(
@@ -310,7 +327,7 @@ class _KakaoLoginState extends State<SignIn> {
 
   Widget signupTextField() {
     return Padding(
-      padding: EdgeInsets.only(top: 50),
+      padding: EdgeInsets.only(top: isSmall ? 20 :50),
       child: Center(
         child: RichText(
           text: TextSpan(

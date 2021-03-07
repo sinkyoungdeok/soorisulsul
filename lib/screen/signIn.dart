@@ -2,9 +2,54 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/all.dart';
-
+import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import '../route.dart';
 
+bool isLoggedIn = false;
+
+void onLoginStatusChanged(bool isLoggedIn) {
+
+}
+
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Facebook Login"),
+      ),
+      body: Container(
+        child: Center(
+          child: isLoggedIn
+              ? Text("Logged In")
+              : RaisedButton(
+            child: Text("Login with Facebook"),
+            onPressed: () => initiateFacebookLogin(),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+void initiateFacebookLogin() async {
+  var facebookLogin = FacebookLogin();
+  var facebookLoginResult =
+  await facebookLogin.logInWithReadPermissions(['email']);
+  switch (facebookLoginResult.status) {
+    case FacebookLoginStatus.error:
+      print("Error");
+      onLoginStatusChanged(false);
+      break;
+    case FacebookLoginStatus.cancelledByUser:
+      print("CancelledByUser");
+      onLoginStatusChanged(false);
+      break;
+    case FacebookLoginStatus.loggedIn:
+      print("LoggedIn");
+      onLoginStatusChanged(true);
+      break;
+  }
+}
 class SignIn extends StatefulWidget {
   SignIn({Key key, this.title}) : super(key: key);
 
@@ -162,6 +207,7 @@ class _KakaoLoginState extends State<SignIn> {
                   passwordTextField(),
                   signInButton(context),
                   kakaoSignInButton(context),
+                  facebookSignInButton(context),
                   forgotpasswordTextField(),
                   signupTextField()
                 ],
@@ -316,6 +362,36 @@ class _KakaoLoginState extends State<SignIn> {
     );
   }
 
+  Widget facebookSignInButton(BuildContext context){
+    return Padding(
+        padding: EdgeInsets.only(top: 20),
+        child: InkWell (
+          child: Container(
+              width: MediaQuery.of(context).size.width * 1,
+              height: MediaQuery.of(context).size.height * 0.05,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.blueAccent
+              ),
+              child :Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.chat_bubble, color: Colors.black54),
+                  SizedBox(width: 10,),
+                  Text(
+                    '페이스북 로그인',
+                    style: TextStyle(
+                        color: Colors.black54,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 20
+                    ),
+                  ),
+                ],
+              )
+          ),
+        )
+    );
+  }
   Widget forgotpasswordTextField() {
     return Padding(
       padding: EdgeInsets.only(top: isSmall ? 20 : 50),

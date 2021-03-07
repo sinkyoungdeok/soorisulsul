@@ -366,6 +366,7 @@ class _KakaoLoginState extends State<SignIn> {
     return Padding(
         padding: EdgeInsets.only(top: 20),
         child: InkWell (
+            onTap:() =>initiateFacebookLogin(),
           child: Container(
               width: MediaQuery.of(context).size.width * 1,
               height: MediaQuery.of(context).size.height * 0.05,

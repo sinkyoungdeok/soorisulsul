@@ -23,7 +23,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_facebook_login: ^1.1.1
   kakao_flutter_sdk: ^0.5.4
   dio:
   json_annotation:

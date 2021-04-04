@@ -2,54 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/all.dart';
-import 'package:flutter_facebook_login/flutter_facebook_login.dart';
+
 import '../route.dart';
 
-bool isLoggedIn = false;
-
-void onLoginStatusChanged(bool isLoggedIn) {
-
-}
-
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text("Facebook Login"),
-      ),
-      body: Container(
-        child: Center(
-          child: isLoggedIn
-              ? Text("Logged In")
-              : RaisedButton(
-            child: Text("Login with Facebook"),
-            onPressed: () => initiateFacebookLogin(),
-          ),
-        ),
-      ),
-    ),
-  );
-}
-void initiateFacebookLogin() async {
-  var facebookLogin = FacebookLogin();
-  var facebookLoginResult =
-  await facebookLogin.logInWithReadPermissions(['email']);
-  switch (facebookLoginResult.status) {
-    case FacebookLoginStatus.error:
-      print("Error");
-      onLoginStatusChanged(false);
-      break;
-    case FacebookLoginStatus.cancelledByUser:
-      print("CancelledByUser");
-      onLoginStatusChanged(false);
-      break;
-    case FacebookLoginStatus.loggedIn:
-      print("LoggedIn");
-      onLoginStatusChanged(true);
-      break;
-  }
-}
 class SignIn extends StatefulWidget {
   SignIn({Key key, this.title}) : super(key: key);
 
@@ -207,7 +162,6 @@ class _KakaoLoginState extends State<SignIn> {
                   passwordTextField(),
                   signInButton(context),
                   kakaoSignInButton(context),
-                  facebookSignInButton(context),
                   forgotpasswordTextField(),
                   signupTextField()
                 ],
@@ -362,6 +316,7 @@ class _KakaoLoginState extends State<SignIn> {
     );
   }
 
+<<<<<<< HEAD
   Widget facebookSignInButton(BuildContext context){
     return Padding(
         padding: EdgeInsets.only(top: 20),
@@ -393,6 +348,8 @@ class _KakaoLoginState extends State<SignIn> {
         )
     );
   }
+=======
+>>>>>>> parent of f174712... [ADD] facebook login ui
   Widget forgotpasswordTextField() {
     return Padding(
       padding: EdgeInsets.only(top: isSmall ? 20 : 50),

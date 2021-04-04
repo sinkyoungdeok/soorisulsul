@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "497695710989",
+    "project_id": "soorisulsul",
+    "storage_bucket": "soorisulsul.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497695710989:android:f2a77343890dff8aab5a44",
+        "android_client_info": {
+          "package_name": "com.app.soorisulsul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497695710989-tcvptabnm053uefh45qho98mb69bs3n5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnFLwOxg1a4wx9SNcvn3vAfllqrQ98AKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497695710989-tcvptabnm053uefh45qho98mb69bs3n5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "497695710989-t0lkh57md2gpn65gtgtesqi27of762jq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.soorisulsul"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

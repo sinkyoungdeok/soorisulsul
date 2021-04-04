@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1181552618/android.kakao_flutter_sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/-1181552618/android.kakao_flutter_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/104123763/android.package_info.iml" filepath="$PROJECT_DIR$/.idea/modules/104123763/android.package_info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2137259899/android.shared_preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/2137259899/android.shared_preferences.iml" />
+    </modules>
+  </component>
+</project>

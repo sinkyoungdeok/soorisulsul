@@ -189,7 +189,7 @@ class _KakaoLoginState extends State<SignIn> {
       ),
     );
   }
-  
+
   Widget emailTextField() {
     var myDeviceHeight = MediaQuery.of(context).size.height;
     return Padding(
@@ -219,7 +219,7 @@ class _KakaoLoginState extends State<SignIn> {
       ),
     );
   }
-  
+
   Widget passwordTextField() {
     var myDeviceHeight = MediaQuery.of(context).size.height;
     return Container(
@@ -246,7 +246,7 @@ class _KakaoLoginState extends State<SignIn> {
       ),
     );
   }
-  
+
   Widget signInButton(BuildContext context) {
     var myDeviceHeight = MediaQuery.of(context).size.height;
     return Padding(
@@ -286,48 +286,15 @@ class _KakaoLoginState extends State<SignIn> {
 
   Widget kakaoSignInButton(BuildContext context){
     return Padding(
-      padding: EdgeInsets.only(top: 20),
-      child: InkWell (
-        onTap: () => _isKakaoTalkInstalled? _loginWithTalk() : _loginWithKakao(),
-        child: Container(
-          width: MediaQuery.of(context).size.width * 1,
-          height: MediaQuery.of(context).size.height * 0.05,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: Colors.yellow
-          ),
-          child :Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.chat_bubble, color: Colors.black54),
-              SizedBox(width: 10,),
-              Text(
-                '카카오계정 로그인',
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 20
-                ),
-              ),
-            ],
-          )
-        ),
-      )
-    );
-  }
-
-<<<<<<< HEAD
-  Widget facebookSignInButton(BuildContext context){
-    return Padding(
         padding: EdgeInsets.only(top: 20),
         child: InkWell (
-            onTap:() =>initiateFacebookLogin(),
+          onTap: () => _isKakaoTalkInstalled? _loginWithTalk() : _loginWithKakao(),
           child: Container(
               width: MediaQuery.of(context).size.width * 1,
               height: MediaQuery.of(context).size.height * 0.05,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.blueAccent
+                  color: Colors.yellow
               ),
               child :Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -335,7 +302,7 @@ class _KakaoLoginState extends State<SignIn> {
                   Icon(Icons.chat_bubble, color: Colors.black54),
                   SizedBox(width: 10,),
                   Text(
-                    '페이스북 로그인',
+                    '카카오계정 로그인',
                     style: TextStyle(
                         color: Colors.black54,
                         fontWeight: FontWeight.w900,
@@ -348,8 +315,7 @@ class _KakaoLoginState extends State<SignIn> {
         )
     );
   }
-=======
->>>>>>> parent of f174712... [ADD] facebook login ui
+
   Widget forgotpasswordTextField() {
     return Padding(
       padding: EdgeInsets.only(top: isSmall ? 20 : 50),
@@ -398,6 +364,5 @@ class _KakaoLoginState extends State<SignIn> {
   }
 
 
-  
-}
 
+}

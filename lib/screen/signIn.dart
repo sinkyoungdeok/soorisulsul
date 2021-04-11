@@ -118,9 +118,12 @@ class _KakaoLoginState extends State<SignIn> {
 
   Widget visualContainer() {
     return Container(
+      transform: Matrix4.translationValues(0.0, -5.0, 0.0),
+
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('Assets/image1.png'),
+              image: AssetImage('Assets/loginbeer.png'),
+
               fit: BoxFit.fitWidth,
               alignment: Alignment.topCenter
           )
@@ -146,7 +149,7 @@ class _KakaoLoginState extends State<SignIn> {
             .size
             .width,
         // margin: EdgeInsets.only(top: isSmall ? 180 : 300),
-        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.35),
+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.27),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,

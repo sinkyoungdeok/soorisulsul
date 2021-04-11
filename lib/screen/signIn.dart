@@ -155,15 +155,35 @@ class _KakaoLoginState extends State<SignIn> {
             padding: EdgeInsets.fromLTRB(35, 0, 35, 35),
             child: Form(
               key: formKey,
-              child: ListView(
+              child: Column(
                 children: <Widget>[
-                  signInTextField(),
-                  emailTextField(),
-                  passwordTextField(),
-                  signInButton(context),
-                  kakaoSignInButton(context),
-                  forgotpasswordTextField(),
-                  signupTextField()
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                        children:<Widget>[signInTextField()]
+                    ),
+                  )
+
+
+                  ,
+                  // emailTextField(),
+                  // passwordTextField(),
+                  // signInButton(context),
+                  Expanded(
+                      flex: 5,
+
+                      child: Column(
+                          children:<Widget>[kakaoSignInButton(context)]
+                      ),
+                  ),
+                  Expanded(
+                    flex: 4,
+                    child: Column(
+                        children:<Widget>[forgotpasswordTextField(),
+                          signupTextField()]
+                    ),
+                  ),
+
                 ],
               ),
             )
@@ -176,16 +196,20 @@ class _KakaoLoginState extends State<SignIn> {
 
   Widget signInTextField() {
     return Container(
-      child: RichText(
-        text: TextSpan(
-            text: "Sign In",
-            style: TextStyle(
+      width: MediaQuery.of(context).size.width,
+      child: Text(
+          "Sign In",
+          textAlign: TextAlign.left,
+
+
+
+          style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'Tomorrow',
               color: Colors.black,
               fontSize: isSmall ? 25 : 40,
-            )
-        ),
+          )
+
       ),
     );
   }

@@ -149,13 +149,14 @@ class _KakaoLoginState extends State<SignIn> {
             .size
             .width,
         // margin: EdgeInsets.only(top: isSmall ? 180 : 300),
-        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.27),
+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.26),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.white,
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(20),
+              topRight:Radius.circular(20)),
+          color: const Color(0xffC69C6C),
         ),
         child: Padding(
-            padding: EdgeInsets.fromLTRB(35, 0, 35, 35),
+            padding: EdgeInsets.fromLTRB(35, 10, 35, 35),
             child: Form(
               key: formKey,
               child: Column(
